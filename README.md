@@ -1,2 +1,2 @@
-# 00why00.github.io
+# blog
 My blog
