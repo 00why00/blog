@@ -112,7 +112,7 @@
 <meta property="og:site_name" content="WHY的博客">
 <meta property="og:description" content="Photos 	   	图片正在加载中…     (function() {     var loadScript = function(path) {       var $script = document.createElement(&apos;script&apos;)       document.getElementsByTagName(&apos;body&apos;)[0].appendChild($script)">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-07-22T03:18:15.160Z">
+<meta property="og:updated_time" content="2019-02-03T10:45:16.603Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="相册">
 <meta name="twitter:description" content="Photos 	   	图片正在加载中…     (function() {     var loadScript = function(path) {       var $script = document.createElement(&apos;script&apos;)       document.getElementsByTagName(&apos;body&apos;)[0].appendChild($script)">
@@ -449,13 +449,9 @@
                 
               
 
-              <time title="创建时间：2018-07-22 11:23:32 / 修改时间：11:18:15" itemprop="dateCreated datePublished" datetime="2018-07-22T11:23:32+08:00">2018-07-22</time>
+              <time title="创建时间：2019-02-03 18:45:16" itemprop="dateCreated datePublished" datetime="2019-02-03T18:45:16+08:00">2019-02-03</time>
             
 
-            
-              
-
-              
             
           </span>
 
@@ -633,10 +629,7 @@
           
 
   
-    <div class="comments" id="comments">
-      
-        <div id="gitment-container"></div>
-      
+    <div class="comments" id="gitalk-container">
     </div>
 
   
@@ -1001,49 +994,46 @@
 
 
   
-    <!-- LOCAL: You can save these files to your site and update links -->
+    
 
-  
-  <script src="https://cdn.jsdelivr.net/gh/theme-next/theme-next-gitment@1/gitmint.browser.js"></script>
+<script src="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/theme-next/theme-next-gitment@1/default.css">
-<!-- END LOCAL -->
 
-<style>
-#gitment-container a {
-  border-bottom: none;
-}
 
-  a.gitment-editor-footer-tip, .gitment-container.gitment-footer-container {
-    display: none;
-  }
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.css">
 
-</style>
+
+
+<script src="//cdn.jsdelivr.net/npm/js-md5@0.7.3/src/md5.min.js"></script>
 
 <script>
-  function renderGitment() {
-    var gitment = new Gitmint({
-      id: window.location.pathname,
-      owner: '00why00',
-      repo: '00why00.github.io',
-      
-        lang: '' || navigator.language || navigator.systemLanguage || navigator.userLanguage,
-      
-      oauth: {
-      
-      
-        client_secret: '1d37b030fdeca0fba7416dc89c8817b81f410f3f',
-      
-        client_id: '0c54ce8b3a8f3165ebc4'
-      }
-    });
-    gitment.render('gitment-container');
-  }
-
-  
-    renderGitment();
-  
+  var gitalk = new Gitalk({
+    clientID: 'c6899b822a9ba20d1b91',
+    clientSecret: '2de3b10652acbe4a313c6306ebf073a1fc13311c',
+    repo: '00why00.github,io',
+    owner: '00why00',
+    admin: ['00why00'],
+    id: md5(location.pathname),
+    distractionFreeMode: 'true'
+  });
+  gitalk.render('gitalk-container');
 </script>
+
+
+  <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+  <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+   <script type="text/javascript">
+        var gitalk = new Gitalk({
+          clientID: '',
+          clientSecret: '',
+          repo: '00why00.github,io',
+          owner: '',
+          admin: [''],
+          id: location.pathname,
+          distractionFreeMode: ''
+        })
+        gitalk.render('gitalk-container')           
+       </script>
 
   
 

@@ -112,7 +112,7 @@
 <meta property="og:site_name" content="WHY的博客">
 <meta property="og:description" content="欢迎光临 欢迎来到WHY的个人博客，今天是二〇一八年二月八日，农历二〇一七年腊月廿三，恰逢新春佳节。经过了博主长达半个多月的学习和准备，我的博客终于上线了。  关于博主 某四非一本大学计算机科学与技术专业在读，未来的苦逼码农。  本人 微博、知乎、Facebook、Twitter、Google+ 欢迎关注或私信交流。  本人邮箱：66why99@gamil.com  生乎吾前，其闻道也固先乎吾，吾">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-07-26T10:04:37.450Z">
+<meta property="og:updated_time" content="2019-02-03T10:45:16.581Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hello World">
 <meta name="twitter:description" content="欢迎光临 欢迎来到WHY的个人博客，今天是二〇一八年二月八日，农历二〇一七年腊月廿三，恰逢新春佳节。经过了博主长达半个多月的学习和准备，我的博客终于上线了。  关于博主 某四非一本大学计算机科学与技术专业在读，未来的苦逼码农。  本人 微博、知乎、Facebook、Twitter、Google+ 欢迎关注或私信交流。  本人邮箱：66why99@gamil.com  生乎吾前，其闻道也固先乎吾，吾">
@@ -447,7 +447,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2018-07-26 18:04:37" itemprop="dateModified" datetime="2018-07-26T18:04:37+08:00">2018-07-26</time>
+                <time title="修改时间：2019-02-03 18:45:16" itemprop="dateModified" datetime="2019-02-03T18:45:16+08:00">2019-02-03</time>
               
             
           </span>
@@ -474,18 +474,6 @@
 
           
             
-            
-              
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-            
-                <a href="/2018/02/08/hello/#comments" itemprop="discussionUrl">
-                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count gitment-comments-count" data-xid="/2018/02/08/hello/" itemprop="commentCount"></span>
-                </a>
-              </span>
             
           
 
@@ -693,10 +681,7 @@
           
 
   
-    <div class="comments" id="comments">
-      
-        <div id="gitment-container"></div>
-      
+    <div class="comments" id="gitalk-container">
     </div>
 
   
@@ -1087,49 +1072,46 @@
 
 
   
-    <!-- LOCAL: You can save these files to your site and update links -->
+    
 
-  
-  <script src="https://cdn.jsdelivr.net/gh/theme-next/theme-next-gitment@1/gitmint.browser.js"></script>
+<script src="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/theme-next/theme-next-gitment@1/default.css">
-<!-- END LOCAL -->
 
-<style>
-#gitment-container a {
-  border-bottom: none;
-}
 
-  a.gitment-editor-footer-tip, .gitment-container.gitment-footer-container {
-    display: none;
-  }
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.css">
 
-</style>
+
+
+<script src="//cdn.jsdelivr.net/npm/js-md5@0.7.3/src/md5.min.js"></script>
 
 <script>
-  function renderGitment() {
-    var gitment = new Gitmint({
-      id: window.location.pathname,
-      owner: '00why00',
-      repo: '00why00.github.io',
-      
-        lang: '' || navigator.language || navigator.systemLanguage || navigator.userLanguage,
-      
-      oauth: {
-      
-      
-        client_secret: '1d37b030fdeca0fba7416dc89c8817b81f410f3f',
-      
-        client_id: '0c54ce8b3a8f3165ebc4'
-      }
-    });
-    gitment.render('gitment-container');
-  }
-
-  
-    renderGitment();
-  
+  var gitalk = new Gitalk({
+    clientID: 'c6899b822a9ba20d1b91',
+    clientSecret: '2de3b10652acbe4a313c6306ebf073a1fc13311c',
+    repo: '00why00.github,io',
+    owner: '00why00',
+    admin: ['00why00'],
+    id: md5(location.pathname),
+    distractionFreeMode: 'true'
+  });
+  gitalk.render('gitalk-container');
 </script>
+
+
+  <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+  <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+   <script type="text/javascript">
+        var gitalk = new Gitalk({
+          clientID: '',
+          clientSecret: '',
+          repo: '00why00.github,io',
+          owner: '',
+          admin: [''],
+          id: location.pathname,
+          distractionFreeMode: ''
+        })
+        gitalk.render('gitalk-container')           
+       </script>
 
   
 
