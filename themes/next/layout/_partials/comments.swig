@@ -52,6 +52,10 @@
     <div class="comments" id="gitalk-container">
     </div>
 
+  {% elseif theme.gitalk.enable %}
+    <div id="gitalk-container">
+    </div>
+
   {% endif %}
 
 {% endif %}
